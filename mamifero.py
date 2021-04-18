@@ -22,7 +22,6 @@ class Mamifero(ABC, Animal):
     def produzir_som(self):
         pass
 
-    @abstractmethod
     def mover(self, distancia):
         if isinstance(distancia, int):
             self.__deslocamento = self.__tamanho_passo * distancia
